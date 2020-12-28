@@ -1,0 +1,89 @@
+// main:..//style.less
+
+
+.b5 {
+    background: url(.././images/dest/b5bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: @white;
+    padding-top: 105px;
+    padding-bottom: 65px;
+    text-align: center;
+
+    .b5__header {
+        width: 700px;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 32px;
+            line-height: 101.9%;
+
+
+        }
+    }
+
+    .b5__cards {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        .b5__card {
+            max-width: 300px;
+            margin: 0 auto;
+
+            h3 {
+                margin-top: 32px;
+                margin-bottom: 8px;
+                text-transform: uppercase;
+            }
+
+            p {
+                line-height: 110%;
+
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .b5 {
+        .b5__cards {
+            .b5__card {
+                max-width: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .b5 {
+        .b5__header {
+            width: 400px;
+
+            h2 {
+                font-size: 25px;
+            }
+        }
+
+        .b5__cards {
+            flex-direction: column;
+
+            .b5__card {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .b5 {
+        .b5__header {
+            width: 300px;
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+    }
+}

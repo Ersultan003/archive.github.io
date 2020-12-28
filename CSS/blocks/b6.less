@@ -1,0 +1,116 @@
+// main: ..//style.less
+
+
+
+.b6 {
+    padding: 120px 0;
+
+    h2 {
+        font-size: 36px;
+        line-height: 47px;
+        color: @pink;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .b6__inner {
+        display: flex;
+        justify-content: space-between;
+        width: 1200px;
+        margin: 0 auto;
+
+        .b6__item {
+            margin-top: 34px;
+            width: 340px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 8px 0px 4px rgba(160, 160, 160, 0.25);
+            border-radius: 28px;
+            padding: 28px 48px 40px 48px;
+            transition: 0.2s linear;
+
+            &:hover {
+                transform: translateY(3px)
+            }
+
+            img {
+                border-radius: 20px;
+            }
+
+            h3 {
+                margin-top: 25px;
+                line-height: 23px;
+                color: @violet;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .b6 {
+        padding: 30px 0;
+
+        .container {
+            max-width: 400px;
+        }
+
+        .b6__inner {
+            flex-wrap: wrap;
+            margin-left: 33px;
+            width: 300px;
+
+            .b6__item {
+                margin-top: 30px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .b6 {
+        .container {
+            max-width: 400px;
+        }
+
+        .b6__inner {
+            width: 300px;
+        }
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    .b6 {
+        h2 {
+            font-size: 27px;
+        }
+
+        .b6__inner {
+
+            .b6__item {
+                .b6__image {
+                    width: 185px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width:320px) {
+    .b6 {
+        .b6__inner {
+            width: 250px;
+
+            .b6__item {
+                width: 290px;
+            }
+        }
+    }
+
+}

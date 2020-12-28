@@ -1,0 +1,116 @@
+// main: ..//style.less
+.b2 {
+    .b2__wrapper {
+        max-width: 924px;
+        margin: 0 auto;
+    }
+
+    .b2__top {
+        background: linear-gradient(270deg, #562C78 22.66%, #B890D8 93.26%), #24AD74;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 32px 0;
+        text-align: center;
+        margin-bottom: 145px;
+        width: 100%;
+
+        h2 {
+            font-size: 40px;
+            line-height: 99.19%;
+            color: @white;
+        }
+    }
+
+    .b2__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .b2__card {
+            width: 400px;
+            margin-bottom: 120px;
+            text-align: center;
+
+            span {
+                font-size: 57px;
+                line-height: 101.9%;
+                color: @pink;
+                font-weight: 700;
+            }
+
+            img {
+                border-radius: 120px;
+            }
+
+            p {
+                text-align: center;
+                margin-top: 20px;
+                color: @brown;
+
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .b2 {
+        .b2__cards {
+            .b2__card {
+                margin-bottom: 33px;
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .b2 {
+        .b2__top {
+            margin-bottom: 90px;
+        }
+
+        .b2__cards {
+            -ms-grid-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+
+            .b2__card {
+                margin-bottom: 33px;
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .b2 {
+        .b2__cards {
+            -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
+
+            .b2__card {
+                margin-bottom: 33px;
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .b2 {
+        overflow-x: hidden;
+
+        .b2__cards {
+            .b2__card {
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .b2 {
+        .b2__cards {
+            .b2__card {
+                width: 300px;
+            }
+        }
+    }
+}
